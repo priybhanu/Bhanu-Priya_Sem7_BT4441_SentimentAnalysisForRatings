@@ -1,0 +1,100 @@
+/* Reset default margin and padding */
+body, h1, h2, h3, h4, h5, h6, ul, ol, li, p, blockquote, figure, fieldset, textarea, pre {
+    margin: 0;
+    padding: 0;
+}
+
+/* Box sizing border-box */
+html {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+/* Page layout */
+body {
+    background-color: #f5f5f5;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+main {
+    background: #bdc3c7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px); /* Adjust according to your header height */
+}
+
+.container {
+    background-color: #fff;
+    /* width: 80%; */
+    height:auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+.analysis-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+textarea {
+    min-width: 1000px;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical; /* Allow vertical resizing if needed */
+    min-height: 300px; /* Set a minimum height */
+}
+
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.container-rs {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+}
+
+.result-text, .result-sentiment {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.result-sentiment {
+    font-weight: bold;
+}
